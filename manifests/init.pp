@@ -1,7 +1,7 @@
 class cgit (
 
   $version  = undef,
-  $git_user = undef,
+  $git_home = undef,
 
 ) {
 
