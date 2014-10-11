@@ -4,11 +4,12 @@ class cgit::install inherits cgit {
     ensure => $version,
   }
 
-  file { $git_home:
-    mode => '0755',
-  }
+  file { "/home/$git_user":
+    mode    => '0755',
+    require => User[$git_user],
+  } ->
 
-  file { "${git_home}/projects.list":
+  file { "/home/${git_user}/projects.list":
     mode => '0644',
   }
 }
