@@ -1,3 +1,7 @@
-class cgit {
+class cgit (
+
+  $version = undef,
+
+) {
 
 }
