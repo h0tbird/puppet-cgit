@@ -4,7 +4,7 @@ class cgit::install inherits cgit {
     ensure => $version,
   }
 
-  file { $git_home:
+  File <| title == $git_home |> {
     mode => '0755',
   }
 
