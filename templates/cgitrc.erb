@@ -1,15 +1,10 @@
-#
-# See cgitrc(5) or /usr/share/doc/cgit-*/cgitrc.5.html for details
-#
-
-# Enable caching of up to 1000 output entries
-#cache-size=1000
-
-# do not cache
+# Do not cache
 nocache=1
+
+# Enable caching of up to 'n' output entries
 cache-size=0
 
-# don't index site
+# Don't index site
 robots=noindex, nofollow
 
 # Specify the css url
@@ -33,31 +28,25 @@ enable-log-linecount=1
 # Use a custom logo
 logo=/cgit-data/cgit.png
 
-# show number of tags
+# Show number of tags
 summary-tags=10
 
 # Enable statistics per week, month and quarter
 max-stats=week
 
 # Set the title and heading of the repository index page
-#root-title=example.com git repositories
 root-title=Welcome to Git Central
 
 # Set a subheading for the repository index page
-#root-desc=tracking the foobar development
 root-desc=One Source to Track Them All
 
 # Include some more info about this site on the index page
 #root-readme=/var/www/html/about.html
 
 # Allow download of tar.gz, tar.bz2 and zip-files
-#snapshots=tar.gz tar.bz2 zip
 snapshots=tar.gz tar.bz2
 
-##
-## List of common mimetypes
-##
-
+# List of common mimetypes
 mimetype.gif=image/gif
 mimetype.html=text/html
 mimetype.jpg=image/jpeg
